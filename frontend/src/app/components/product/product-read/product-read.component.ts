@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ProductService } from './../product.service';
 import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
@@ -12,11 +13,14 @@ export class ProductReadComponent implements OnInit {
   products: Product[] = [];
   displayedColumns= ['id', 'name', 'price', 'action']
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {this.products= products
     console.log(products)})
   }
 
+  deleteProduct(id: String): void{
+    this.productService.deleteById(id).subscribe(() => { this.productService.showMessage("Deletado com sucesso!!!"), this.ngOnInit();});
+  }
 }

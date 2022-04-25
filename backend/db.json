@@ -1,44 +1,19 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC preta",
-      "price": 5.89
-    },
-    {
       "id": 2,
       "name": "Dell gamming 5760",
       "price": 4500
     },
     {
-      "id": 3,
-      "name": "Xiaomi redmi note 10",
-      "price": 1200
-    },
-    {
-      "id": 6,
-      "name": "iphone7",
-      "price": 1200
-    },
-    {
-      "name": "Monitor",
-      "price": "450.60",
+      "name": "Teclado gamer",
+      "price": "120.40",
       "id": 7
     },
     {
-      "name": "Teclado",
-      "price": "85.80",
+      "name": "Placa de vídeo NVidia 1050TI",
+      "price": "1500.80",
       "id": 8
-    },
-    {
-      "name": "Mouse",
-      "price": "85.90",
-      "id": 9
-    },
-    {
-      "name": "bateria",
-      "price": "300.89",
-      "id": 10
     }
   ]
 }
